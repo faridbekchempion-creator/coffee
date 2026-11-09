@@ -1,0 +1,65 @@
+
+.why{
+    height: 700px;
+    border-radius: 20px;
+    background-color: rgb(16, 15, 27);
+    color: white;
+
+
+
+
+
+    &_title{
+    text-align: center;
+    margin-top: 30px;
+
+
+
+font-family: 'Fraunces ';
+font-style: normal;
+font-weight: 900;
+font-size: 40px;
+
+/* identical to box height, or 120% */
+text-align: center;
+
+color: #FEFCF7;
+
+
+
+
+      &_text{
+
+      
+margin: auto;
+width: 600px;
+
+font-family: 'Barlow';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+/* or 162% */
+text-align: center;
+
+color: #FEFCF7;
+
+mix-blend-mode: normal;
+opacity: 0.8;
+
+      }
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+}

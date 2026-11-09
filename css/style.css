@@ -1,0 +1,249 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 1300px;
+  margin: auto;
+  padding: 20px 50px;
+}
+
+@media only screen and (max-width: 480px) {
+  .wrapper {
+    width: 95%;
+    padding: 20px 30px;
+  }
+}
+.intro {
+  background-image: url(/img/Bitmap.png);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  border-radius: 30px;
+  margin: auto;
+  margin-top: 50px;
+  padding: 60px 70px;
+}
+.intro_title {
+  /* Great coffee made si */
+  width: 500px;
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  /* or 100% */
+  color: #FEFCF7;
+}
+.intro_text {
+  /* Start your mornings */
+  width: 500px;
+  margin: 20px 0;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+  color: #FEFCF7;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+.intro_btn {
+  width: 217px;
+  height: 56px;
+  background: #66D2CF;
+  border-radius: 6px;
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #FEFCF7;
+  border: none;
+}
+.intro_btn:hover {
+  background-color: #0aa7a2;
+}
+.intro_btn:active {
+  background-color: #a6ebe9;
+}
+
+@media only screen and (max-width: 480px) {
+  .intro {
+    padding: 30px 35px;
+    height: 400px;
+    margin-top: 40px;
+  }
+  .intro_title {
+    width: 100%;
+    font-size: 35px;
+    line-height: 40px;
+    text-align: center;
+    color: #FEFCF7;
+  }
+  .intro_text {
+    /* Start your mornings */
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    /* or 167% */
+    text-align: center;
+    color: #FEFCF7;
+  }
+  .intro_btn {
+    margin: auto;
+    display: block;
+  }
+}
+.collaction {
+  margin-top: 100px;
+  background-image: url(../img/collaction.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.collaction_card {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+}
+.collaction_title {
+  /* Planalto */
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+  text-align: center;
+  color: #333D4B;
+}
+.collaction_text {
+  /* Brazilian dark roast */
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+  text-align: center;
+  color: #333D4B;
+}
+
+@media only screen and (max-width: 480px) {
+  .collaction {
+    flex-direction: column;
+  }
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar_logo {
+  width: 220px;
+}
+.navbar_link {
+  /* HOME */
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height, or 125% */
+  letter-spacing: 0.923077px;
+  text-transform: uppercase;
+  color: #83888f;
+}
+.navbar_link:hover {
+  color: #0a0a0b;
+  transition: all 0.2s linear;
+}
+.navbar_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.navbar_burger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 3px;
+  display: none;
+}
+.navbar_burger_item {
+  width: 25px;
+  height: 2px;
+  background-color: #0a0a0b;
+  border-radius: 20px;
+}
+.navbar_burger_item:nth-child(2) {
+  width: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+  .navbar_list {
+    display: none;
+  }
+  .navbar_burger {
+    display: flex;
+  }
+  .navbar_logo {
+    width: 170px;
+  }
+}
+.why {
+  height: 700px;
+  border-radius: 20px;
+  background-color: rgb(16, 15, 27);
+  color: white;
+}
+.why_title {
+  text-align: center;
+  margin-top: 30px;
+  font-family: "Fraunces ";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  /* identical to box height, or 120% */
+  text-align: center;
+  color: #FEFCF7;
+}
+.why_title_text {
+  margin: auto;
+  width: 600px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+  text-align: center;
+  color: #FEFCF7;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}/*# sourceMappingURL=style.css.map */

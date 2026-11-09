@@ -1,0 +1,75 @@
+.navbar {
+  @include Display();
+
+  &_logo {
+    width: 220px;
+  }
+
+  &_link {
+    /* HOME */
+
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height, or 125% */
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+
+    color: #83888f;
+
+    &:hover {
+    color: #0a0a0b;
+    transition: all 0.2s linear;
+  }
+  }
+
+  &_list {
+    @include Display();
+    gap: 30px;
+  }
+
+   
+  &_burger {
+
+    @include Display();
+    flex-direction: column;
+    gap: 3px;
+    display: none;
+
+
+    &_item{
+     width: 25px;
+     height: 2px;
+     background-color: #0a0a0b;
+     border-radius: 20px;
+
+     &:nth-child(2) {
+      width: 20px;
+     }     
+    } 
+  }
+
+}
+
+@media only screen and (max-width:480px){
+
+  .navbar{
+    &_list{
+
+      display: none;
+    }
+
+    &_burger{
+      display: flex;
+    }
+
+    &_logo{
+      width: 170px;
+    }
+
+  }
+}
+
+

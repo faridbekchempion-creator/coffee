@@ -1,0 +1,38 @@
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+
+li{
+
+    list-style: none;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.wrapper{
+
+    width: 1300px;
+   
+    margin: auto;
+    padding: 20px 50px;
+}
+
+@media only screen and (max-width:480px){
+
+    .wrapper{
+        width: 95%;
+        padding: 20px 30px;
+        
+    }
+}
