@@ -1,0 +1,37 @@
+
+
+.footer {
+  @include Display();
+
+  margin-top: 100px;
+
+  &_logo {
+    width: 220px;
+  }
+
+  &_link {
+    /* HOME */
+
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height, or 125% */
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+
+    color: #83888f;
+
+    &:hover {
+      color: #0a0a0b;
+      transition: all 0.2s linear;
+    }
+  }
+
+  &_list {
+    @include Display();
+    gap: 30px;
+  }
+
+}

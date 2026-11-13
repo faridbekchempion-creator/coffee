@@ -1,65 +1,98 @@
+.why {
 
-.why{
-    height: 700px;
-    border-radius: 20px;
-    background-color: rgb(16, 15, 27);
-    color: white;
+  margin-top: 50px;
+  position: relative;
+  height: 600px;
+  border-radius: 20px;
+  background-color: rgb(16, 15, 27);
 
+  color: white;
+  padding: 50px;
 
-
-
-
-    &_title{
+  &_title {
     text-align: center;
     margin-top: 30px;
 
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
 
+    /* identical to box height, or 120% */
 
-font-family: 'Fraunces ';
-font-style: normal;
-font-weight: 900;
-font-size: 40px;
+    color: #fefcf7;
+  }
+  &_text {
+    font-family: "Barlow";
+    width: 600px;
+    margin: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+    text-align: center;
 
-/* identical to box height, or 120% */
-text-align: center;
+    color: #fefcf7;
 
-color: #FEFCF7;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
 
+  &_cards {
+    @include Display();
+    gap: 25px;
+    position: absolute;
+    bottom: -100px;
+  }
 
+  &_card {
+    /* Group 10 Copy 2 */
 
+    width: 350px;
+    height: 382px;
+    background-color: #0e8784;
+    border-radius: 20px;
+    padding: 40px 30px;
+    @include Display();
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
 
-      &_text{
+    &_title {
+      /* Best quality */
 
-      
-margin: auto;
-width: 600px;
+      font-family: "Fraunces";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 32px;
+      /* identical to box height, or 133% */
+      text-align: center;
 
-font-family: 'Barlow';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 26px;
-/* or 162% */
-text-align: center;
+      color: #fefcf7;
+    }
 
-color: #FEFCF7;
+    &_text {
+      /* Special offers and s */
 
-mix-blend-mode: normal;
-opacity: 0.8;
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      /* or 162% */
+      text-align: center;
 
-      }
+      color: #fefcf7;
+    }
 
-
-
-
-
-
-
+  }
 }
 
 
 
+@media only screen and (max-width:480){
 
-
-
+  
 }

@@ -44,7 +44,7 @@ a {
   font-size: 72px;
   line-height: 72px;
   /* or 100% */
-  color: #FEFCF7;
+  color: #fefcf7;
 }
 .intro_text {
   /* Start your mornings */
@@ -56,7 +56,7 @@ a {
   font-size: 16px;
   line-height: 26px;
   /* or 162% */
-  color: #FEFCF7;
+  color: #fefcf7;
   mix-blend-mode: normal;
   opacity: 0.8;
 }
@@ -92,7 +92,7 @@ a {
     font-size: 35px;
     line-height: 40px;
     text-align: center;
-    color: #FEFCF7;
+    color: #fefcf7;
   }
   .intro_text {
     /* Start your mornings */
@@ -103,7 +103,7 @@ a {
     line-height: 25px;
     /* or 167% */
     text-align: center;
-    color: #FEFCF7;
+    color: #fefcf7;
   }
   .intro_btn {
     margin: auto;
@@ -138,7 +138,7 @@ a {
   line-height: 32px;
   /* identical to box height, or 133% */
   text-align: center;
-  color: #333D4B;
+  color: #333d4b;
 }
 .collaction_text {
   /* Brazilian dark roast */
@@ -149,7 +149,7 @@ a {
   line-height: 26px;
   /* or 162% */
   text-align: center;
-  color: #333D4B;
+  color: #333d4b;
 }
 
 @media only screen and (max-width: 480px) {
@@ -217,25 +217,73 @@ a {
   }
 }
 .why {
-  height: 700px;
+  margin-top: 50px;
+  position: relative;
+  height: 600px;
   border-radius: 20px;
   background-color: rgb(16, 15, 27);
   color: white;
+  padding: 50px;
 }
 .why_title {
   text-align: center;
   margin-top: 30px;
-  font-family: "Fraunces ";
+  font-family: "Fraunces";
   font-style: normal;
   font-weight: 900;
   font-size: 40px;
   /* identical to box height, or 120% */
-  text-align: center;
-  color: #FEFCF7;
+  color: #fefcf7;
 }
-.why_title_text {
-  margin: auto;
+.why_text {
+  font-family: "Barlow";
   width: 600px;
+  margin: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+  text-align: center;
+  color: #fefcf7;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+.why_cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  position: absolute;
+  bottom: -100px;
+}
+.why_card {
+  /* Group 10 Copy 2 */
+  width: 350px;
+  height: 382px;
+  background-color: #0e8784;
+  border-radius: 20px;
+  padding: 40px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+.why_card_title {
+  /* Best quality */
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+  text-align: center;
+  color: #fefcf7;
+}
+.why_card_text {
+  /* Special offers and s */
   font-family: "Barlow";
   font-style: normal;
   font-weight: 400;
@@ -243,7 +291,120 @@ a {
   line-height: 26px;
   /* or 162% */
   text-align: center;
+  color: #fefcf7;
+}
+
+.work {
+  margin-top: 200px;
+}
+.work_title {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+  color: #83888f;
+}
+.work_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 900px;
+  margin: 40px 0;
+}
+.work_circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid aquamarine;
+}
+.work_hr {
+  height: 2px;
+  border-radius: 20px;
+  border: 2px solid;
+  width: 450px;
+}
+.work_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.work_subtitle {
+  font-family: "Frauncas";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: #fdd6ba;
+}
+.work_maintitle {
+  font-family: "Frauncas";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  color: #333d4b;
+}
+.work_text {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #333d4b;
+  width: 300px;
+  margin: 20px 0;
+}
+.work_btn {
+  width: 217px;
+  height: 56px;
+  background: #66D2CF;
+  border-radius: 6px;
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
   color: #FEFCF7;
-  mix-blend-mode: normal;
-  opacity: 0.8;
+  border: none;
+}
+.work_btn:hover {
+  background-color: #0aa7a2;
+}
+.work_btn:active {
+  background-color: #a6ebe9;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.footer_logo {
+  width: 220px;
+}
+.footer_link {
+  /* HOME */
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height, or 125% */
+  letter-spacing: 0.923077px;
+  text-transform: uppercase;
+  color: #83888f;
+}
+.footer_link:hover {
+  color: #0a0a0b;
+  transition: all 0.2s linear;
+}
+.footer_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
 }/*# sourceMappingURL=style.css.map */

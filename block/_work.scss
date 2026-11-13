@@ -1,0 +1,80 @@
+.work {
+  margin-top: 200px;
+
+  &_title {
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+
+    color: #83888f;
+  }
+
+  &_top {
+    @include Display();
+    width: 900px;
+    margin: 40px 0;
+  }
+  &_circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid aquamarine;
+  }
+  &_hr {
+    height: 2px;
+    // background-color: burlywood;
+    border-radius: 20px;
+    border: 2px solid;
+    width: 450px;
+  }
+
+  &_bottom {
+    @include Display();
+  }
+
+  &_subtitle {
+    font-family: "Frauncas";
+
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+
+    line-height: 72px;
+
+    color: #fdd6ba;
+  }
+
+  &_maintitle {
+    font-family: "Frauncas";
+
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+
+    line-height: 36px;
+
+    color: #333d4b;
+  }
+
+  &_text {
+    font-family: "Barlow";
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333d4b;
+
+    width: 300px;
+
+    margin: 20px 0;
+  }
+
+  &_btn{
+
+    @include btn();
+  }
+}

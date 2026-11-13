@@ -20,9 +20,9 @@
     color: #83888f;
 
     &:hover {
-    color: #0a0a0b;
-    transition: all 0.2s linear;
-  }
+      color: #0a0a0b;
+      transition: all 0.2s linear;
+    }
   }
 
   &_list {
@@ -30,46 +30,37 @@
     gap: 30px;
   }
 
-   
   &_burger {
-
     @include Display();
     flex-direction: column;
     gap: 3px;
     display: none;
 
+    &_item {
+      width: 25px;
+      height: 2px;
+      background-color: #0a0a0b;
+      border-radius: 20px;
 
-    &_item{
-     width: 25px;
-     height: 2px;
-     background-color: #0a0a0b;
-     border-radius: 20px;
-
-     &:nth-child(2) {
-      width: 20px;
-     }     
-    } 
+      &:nth-child(2) {
+        width: 20px;
+      }
+    }
   }
-
 }
 
-@media only screen and (max-width:480px){
-
-  .navbar{
-    &_list{
-
+@media only screen and (max-width: 480px) {
+  .navbar {
+    &_list {
       display: none;
     }
 
-    &_burger{
+    &_burger {
       display: flex;
     }
 
-    &_logo{
+    &_logo {
       width: 170px;
     }
-
   }
 }
-
-
